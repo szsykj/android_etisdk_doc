@@ -2,7 +2,7 @@
 
 * [集成SDK](part1/README.md)
 * [2.用户管理](part2/README.md)
-* [3.设备配网](part3/README.md)
+* [3.设备配网]()
     * [产品列表](part3/3.1.md)
     * [WIFI设备配网](part3/3.2.md)
 * [4.家庭管理](part4/README.md)

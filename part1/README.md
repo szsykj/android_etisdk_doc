@@ -1,5 +1,5 @@
 #集成SDK
-本章注意介绍如何集成SDK
+本章介绍如何集成SDK,请使用Android studio编辑器来开发
 
 
 #创建工程
@@ -8,7 +8,7 @@
 
 # build.gradle 配置
 build.gradle 文件里添加集成准备中下载的dependencies 依赖库。  
-```
+```java
 implementation (name:'SykjSmartSdk_v1.0.0, ext:'aar')
 
 implementation 'com.squareup.retrofit2:retrofit:2.4.0'
@@ -27,7 +27,7 @@ annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 
 # AndroidManifest.xml 配置
 在Androidmanifest中添加以下权限及服务
-```
+```java
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -44,7 +44,7 @@ annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 
 在application中初始化sdk后，使用sdk中对外提供的接口(具体接口使用参考demo实例)
 
-```
+```java
 public class SykjApplication extends Application {
     @Override
     public void onCreate() {
