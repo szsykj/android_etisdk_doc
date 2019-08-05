@@ -116,4 +116,4 @@ void onTimingChanged(int did, List<Timing> timings);
 | userId     | 用户ID    | 数字  | \-                                                                                       |
 | deviceId   | 设备ID    | 数字  | \-                                                                                       |
 | dtStatus   | 任务的状态   | 数字  | 状态,L\(1~2\) 1：打开， 0：关闭                                                                   |
-                                                                               |
+

@@ -1,6 +1,6 @@
 # Summary
 
-* [集成SDK](part1/README.md)
+* [1.集成SDK](part1/README.md)
 * [2.用户管理](part2/README.md)
 * [3.设备配网]()
     * [产品列表](part3/3.1.md)
@@ -11,6 +11,5 @@
 * [7.设备定时](part7/README.md)
 * [8.倒计时](part8/README.md)
 * [9.智能](part9/README.md)
-* [10.设备分享](part10/README.md)
-* [11.数据模型](part11/README.md)
-* [12.错误码](part12/README.md)
+* [10.设备分享](part10/ios.md)
+* [11.错误码](part11/README.md)
