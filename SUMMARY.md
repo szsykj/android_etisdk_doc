@@ -13,3 +13,4 @@
 * [9.智能](part9/README.md)
 * [10.设备分享](part10/README.md)
 * [11.错误码](part11/README.md)
+* [12.更新日志](part12/README.md)
