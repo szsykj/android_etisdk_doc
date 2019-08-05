@@ -1,10 +1,6 @@
 # Summary
 
 * [集成SDK](part1/README.md)
-    * [创建工程](part1/create.md)
-    * [build.gradle 配置](part1/build.md)
-    * [AndroidManifest.xml 配置](part1/menifest.md)
-    * [SDK初始化](part1/init.md)
 * [2.用户管理](part2/README.md)
 * [3.设备配网](part3/README.md)
     * [产品列表](part3/3.1.md)
