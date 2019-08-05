@@ -52,7 +52,7 @@ void stopTimer(int did, ResultCallBack resultCallBack);
 void saveTimer(TimerModel timerModel);
 ```
 
-#清楚缓存的倒计时
+#清除缓存的倒计时
 ```java
 /**
 * 清除设备的timer缓存
@@ -61,3 +61,16 @@ void saveTimer(TimerModel timerModel);
 */
 void deleteTimer(int did);
 ```
+
+
+#TimerModel 数据模型
+
+| 字段名称       | 字段说明    | 类型  | 备注 |
+|------------|---------|-----|------------------------------------------------------------------------------------------|
+| id         | 倒计时任务的ID  | 数字  |   |
+| deviceId   | 设备的did       | 数字  |  |
+| onoff      |  动作类型       | boolean   | 开或关|
+| targetTime | 目标执行时间     | long | 执行的时间戳 |
+| target     | 执行动作       | 字符串 | {"onoff":"1"}|
+
+

@@ -111,7 +111,7 @@ void onTimingChanged(int did, List<Timing> timings);
 | startInfo  | 启动的信息   | 文本  | \{"time":\{"year":2018,"month":7,"date":8,"hour":12,"min":48\},"trigger":\{"onoff":"0"\} |
 | endInfo    | 结束的信息   | 文本  | \{"time":\{"year":2018,"month":7,"date":8,"hour":12,"min":48\},"trigger":\{"onoff":"0"\} |
 | dtMode     | 模型      | 字符串 |  模型 once：一次性执行 every：每天 week：工作日 reset：周末 self：自定义                                       |
-| dtDays     | 执行日期    | 字符串 | \-                                                                                       |
+| dtDays     | 执行日期    | 字符串 |  对于 mode 为自定义时，每一位代表一周中的一天。<br> 最右边的位为低位，代表周一，最左边的位为高位，代表周日。 <br> 0：标识该天不需要执行定时。 <br> 1：标识该天需要执行定时。<br> 例如，自定义为周二、周四、周五需要执行定时，则为：0011010                                                                                    |
 | createTime | 创建的时间   | 数字  | \-                                                                                       |
 | userId     | 用户ID    | 数字  | \-                                                                                       |
 | deviceId   | 设备ID    | 数字  | \-                                                                                       |
