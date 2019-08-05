@@ -11,5 +11,5 @@
 * [7.设备定时](part7/README.md)
 * [8.倒计时](part8/README.md)
 * [9.智能](part9/README.md)
-* [10.设备分享](part10/ios.md)
+* [10.设备分享](part10/README.md)
 * [11.错误码](part11/README.md)
