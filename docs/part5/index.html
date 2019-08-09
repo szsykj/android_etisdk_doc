@@ -277,6 +277,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.13" data-path="../part12/">
+            
+                <a href="../part12/">
+            
+                    
+                    12.更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -322,7 +335,145 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="&#x6DFB;&#x52A0;&#x623F;&#x95F4;">&#x6DFB;&#x52A0;&#x623F;&#x95F4;</h1>
+<pre><code class="lang-java"><span class="hljs-comment">/**
+ * &#x6DFB;&#x52A0;&#x623F;&#x95F4;
+ * <span class="hljs-doctag">@param</span> hid      &#x5BB6;&#x5EAD;id
+ * <span class="hljs-doctag">@param</span> name     &#x623F;&#x95F4;&#x540D;&#x79F0;
+ * <span class="hljs-doctag">@param</span> icon     &#x623F;&#x95F4;&#x56FE;&#x7247;
+ * <span class="hljs-doctag">@param</span> callBack &#x7ED3;&#x679C;&#x56DE;&#x8C03;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addRoom</span><span class="hljs-params">(<span class="hljs-keyword">int</span> hid,String name,String icon,ResultCallBack callBack)</span>
+</span></code></pre>
+<h1 id="&#x5F97;&#x5230;&#x623F;&#x95F4;&#x6570;&#x636E;">&#x5F97;&#x5230;&#x623F;&#x95F4;&#x6570;&#x636E;</h1>
+<pre><code class="lang-java"><span class="hljs-comment">/**
+ * &#x5F97;&#x5230;&#x623F;&#x95F4;&#x6570;&#x636E;
+ * <span class="hljs-doctag">@param</span> hid      &#x5BB6;&#x5EAD;id
+ * <span class="hljs-doctag">@param</span> callBack &#x7ED3;&#x679C;&#x56DE;&#x8C03;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getRoomList</span><span class="hljs-params">(<span class="hljs-keyword">int</span> hid,ResultCallBack&lt;List&lt;RoomBean&gt;&gt; callBack)</span></span>;
+</code></pre>
+<h1 id="&#x66F4;&#x65B0;&#x623F;&#x95F4;&#x4FE1;&#x606F;">&#x66F4;&#x65B0;&#x623F;&#x95F4;&#x4FE1;&#x606F;</h1>
+<pre><code class="lang-java"><span class="hljs-comment">/**
+ * &#x66F4;&#x65B0;&#x623F;&#x95F4;&#x4FE1;&#x606F;
+ * <span class="hljs-doctag">@param</span> rid      &#x623F;&#x95F4;id
+ * <span class="hljs-doctag">@param</span> name     &#x623F;&#x95F4;&#x540D;&#x79F0;
+ * <span class="hljs-doctag">@param</span> icon     &#x623F;&#x95F4;&#x56FE;&#x7247;
+ * <span class="hljs-doctag">@param</span> callBack &#x7ED3;&#x679C;&#x56DE;&#x8C03;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">updateRoomInfo</span><span class="hljs-params">(<span class="hljs-keyword">int</span> rid,String name,String icon,ResultCallBack callBack)</span></span>;
+</code></pre>
+<h1 id="&#x66F4;&#x65B0;&#x8BBE;&#x5907;&#x6240;&#x5C5E;&#x7684;&#x623F;&#x95F4;">&#x66F4;&#x65B0;&#x8BBE;&#x5907;&#x6240;&#x5C5E;&#x7684;&#x623F;&#x95F4;</h1>
+<pre><code class="lang-java"><span class="hljs-comment">/**
+ * &#x66F4;&#x65B0;&#x8BBE;&#x5907;&#x6240;&#x5C5E;&#x7684;&#x623F;&#x95F4;
+ * <span class="hljs-doctag">@param</span> hid      &#x5BB6;&#x5EAD;id
+ * <span class="hljs-doctag">@param</span> rid      &#x623F;&#x95F4;id
+ * <span class="hljs-doctag">@param</span> dids     &#x8BBE;&#x5907;id&#x96C6;&#x5408;
+ * <span class="hljs-doctag">@param</span> callBack &#x7ED3;&#x679C;&#x56DE;&#x8C03;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">updateRoomDevice</span><span class="hljs-params">(<span class="hljs-keyword">int</span> hid,<span class="hljs-keyword">int</span> rid, List&lt;Integer&gt; dids, ResultCallBack callBack)</span></span>;
+</code></pre>
+<h1 id="&#x5220;&#x9664;&#x623F;&#x95F4;">&#x5220;&#x9664;&#x623F;&#x95F4;</h1>
+<pre><code class="lang-java"><span class="hljs-comment">/**
+ * &#x5220;&#x9664;&#x623F;&#x95F4;
+ * <span class="hljs-doctag">@param</span> hid      &#x5BB6;&#x5EAD;id
+ * <span class="hljs-doctag">@param</span> rid      &#x623F;&#x95F4;id
+ * <span class="hljs-doctag">@param</span> callBack &#x7ED3;&#x679C;&#x56DE;&#x8C03;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">deleteRoom</span><span class="hljs-params">(<span class="hljs-keyword">int</span> hid,<span class="hljs-keyword">int</span> rid,ResultCallBack callBack)</span></span>;
+</code></pre>
+<h1 id="&#x8BBE;&#x7F6E;&#x623F;&#x95F4;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x76D1;&#x542C;">&#x8BBE;&#x7F6E;&#x623F;&#x95F4;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x76D1;&#x542C;</h1>
+<pre><code class="lang-java"><span class="hljs-comment">/**
+ * &#x8BBE;&#x7F6E;&#x623F;&#x95F4;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x76D1;&#x542C;
+ * <span class="hljs-doctag">@param</span> listener &#x623F;&#x95F4;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x76D1;&#x542C;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">registerRoomStatusListener</span><span class="hljs-params">(OnRoomStatusListener listener)</span></span>;
+</code></pre>
+<h1 id="&#x53D6;&#x6D88;&#x623F;&#x95F4;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x76D1;&#x542C;">&#x53D6;&#x6D88;&#x623F;&#x95F4;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x76D1;&#x542C;</h1>
+<pre><code class="lang-java"><span class="hljs-comment">/**
+ * &#x53D6;&#x6D88;&#x623F;&#x95F4;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x76D1;&#x542C;
+ * <span class="hljs-doctag">@param</span> listener &#x623F;&#x95F4;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x76D1;&#x542C;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">unRegisterRoomStatusListener</span><span class="hljs-params">(OnRoomStatusListener listener)</span></span>;
+</code></pre>
+<h1 id="&#x623F;&#x95F4;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x56DE;&#x8C03;&#x7C7B;-onroomstatuslistener">&#x623F;&#x95F4;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x56DE;&#x8C03;&#x7C7B; OnRoomStatusListener</h1>
+<pre><code class="lang-java"><span class="hljs-comment">/**
+ * &#x623F;&#x95F4;&#x6DFB;&#x52A0;&#x6210;&#x529F;
+ * <span class="hljs-doctag">@param</span> rid
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">onRoomAdded</span><span class="hljs-params">(<span class="hljs-keyword">int</span> rid)</span></span>;
+
+<span class="hljs-comment">/**
+ * &#x623F;&#x95F4;&#x5220;&#x9664;&#x6210;&#x529F;
+ * <span class="hljs-doctag">@param</span> rid
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">onRoomRemoved</span><span class="hljs-params">(<span class="hljs-keyword">int</span> rid)</span></span>;
+
+<span class="hljs-comment">/**
+ * &#x623F;&#x95F4;&#x4FE1;&#x606F;&#x6539;&#x53D8;
+ * <span class="hljs-doctag">@param</span> rid
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">onRoomInfoChanged</span><span class="hljs-params">(<span class="hljs-keyword">int</span> rid)</span></span>;
+
+<span class="hljs-comment">/**
+ * &#x623F;&#x95F4;&#x4E0B;&#x8BBE;&#x5907;&#x6539;&#x53D8;
+ * <span class="hljs-doctag">@param</span> rid
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">onRoomDeviceChanged</span><span class="hljs-params">(<span class="hljs-keyword">int</span> rid)</span></span>;
+</code></pre>
+<h1 id="&#x623F;&#x95F4;&#x6A21;&#x578B;&#x7C7B;">&#x623F;&#x95F4;&#x6A21;&#x578B;&#x7C7B;</h1>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;&#x79F0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5B57;&#x6BB5;&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>userId</td>
+<td>&#x6570;&#x5B57;</td>
+<td>&#x7528;&#x6237;id</td>
+</tr>
+<tr>
+<td>homeId</td>
+<td>&#x6570;&#x5B57;</td>
+<td>&#x5BB6;&#x5EAD;id</td>
+</tr>
+<tr>
+<td>roomId</td>
+<td>&#x6570;&#x5B57;</td>
+<td>&#x623F;&#x95F4;id</td>
+</tr>
+<tr>
+<td>roomName</td>
+<td>&#x5B57;&#x7B26;&#x4E32;</td>
+<td>&#x623F;&#x95F4;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>roomIcon</td>
+<td>&#x5B57;&#x7B26;&#x4E32;</td>
+<td>&#x8BBE;&#x5907;&#x6570;&#x91CF;</td>
+</tr>
+<tr>
+<td>roomType</td>
+<td>&#x6570;&#x5B57;</td>
+<td>&#x623F;&#x95F4;&#x7C7B;&#x578B;&#xFF08;1&#xFF1A;&#x9ED8;&#x8BA4; 2&#xFF1A;&#x65B0;&#x589E;&#xFF09;</td>
+</tr>
+<tr>
+<td>createTime</td>
+<td>&#x6570;&#x5B57;</td>
+<td>&#x521B;&#x5EFA;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td>regionCode</td>
+<td>&#x6570;&#x5B57;</td>
+<td>&#x57CE;&#x5E02;&#x7F16;&#x7801;</td>
+</tr>
+</tbody>
+</table>
+
                                 
                                 </section>
                             
@@ -365,7 +516,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5.房间管理","level":"1.6","depth":1,"next":{"title":"6.设备控制","level":"1.7","depth":1,"path":"part6/README.md","ref":"part6/README.md","articles":[]},"previous":{"title":"4.家庭管理","level":"1.5","depth":1,"path":"part4/README.md","ref":"part4/README.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part5/README.md","mtime":"2019-08-03T09:55:23.151Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-05T06:19:38.723Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"5.房间管理","level":"1.6","depth":1,"next":{"title":"6.设备控制","level":"1.7","depth":1,"path":"part6/README.md","ref":"part6/README.md","articles":[]},"previous":{"title":"4.家庭管理","level":"1.5","depth":1,"path":"part4/README.md","ref":"part4/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part5/README.md","mtime":"2019-08-09T04:09:12.443Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-09T04:12:54.323Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
