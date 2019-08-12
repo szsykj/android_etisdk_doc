@@ -126,6 +126,25 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../part2/2.1.html">
+            
+                <a href="../part2/2.1.html">
+            
+                    
+                    数据缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="1.4" >
@@ -277,6 +296,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.13" data-path="../part12/">
+            
+                <a href="../part12/">
+            
+                    
+                    12.更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -331,12 +363,14 @@
 <p>&#x96F7;&#x58EB;&#x7B52;&#x706F;&#x7684;&#x4E8C;&#x7EF4;&#x7801;
 <a href="http://nvciot.nvccloud.com/celighting?M=NVC&amp;VID=0001&amp;WIRELESS=02&amp;TYPE=04&amp;SUBTYPE=0009&amp;VERSION=01&amp;MODE=02&amp;PID=00010204000901" target="_blank">http://nvciot.nvccloud.com/celighting?M=NVC&amp;VID=0001&amp;WIRELESS=02&amp;TYPE=04&amp;SUBTYPE=0009&amp;VERSION=01&amp;MODE=02&amp;PID=00010204000901</a></p>
 <h1 id="&#x6784;&#x5EFA;&#x914D;&#x7F51;&#x5BF9;&#x8C61;">&#x6784;&#x5EFA;&#x914D;&#x7F51;&#x5BF9;&#x8C61;</h1>
-<p> &#x914D;&#x7F51;&#x7C7B;&#x578B;type&#x5B57;&#x6BB5;
- &#x626B;&#x63CF;&#x8BBE;&#x5907;ap&#x4FE1;&#x606F;&#x6DFB;&#x52A0;  TYPE_SCAN=1;
- &#x4EA7;&#x54C1;&#x5217;&#x8868;&#x624B;&#x52A8;&#x9009;&#x62E9;&#x6DFB;&#x52A0; TYPE_MANUAL=2;
- &#x626B;&#x63CF;&#x4E8C;&#x7EF4;&#x7801;&#x6DFB;&#x52A0;        TYPE_QR_CODE=3;
-&#x5F53;type==2&#x6216;3&#x65F6;&#x9700;&#x8981; setQRInfo
-&#x5F53;type==1&#x65F6;&#x9700;&#x8981;setDeviceSsid </p>
+<h2 id="&#x914D;&#x7F51;&#x7C7B;&#x578B;type&#x5B57;&#x6BB5;">&#x914D;&#x7F51;&#x7C7B;&#x578B;type&#x5B57;&#x6BB5;</h2>
+<ul>
+<li>&#x626B;&#x63CF;&#x8BBE;&#x5907;ap&#x4FE1;&#x606F;&#x6DFB;&#x52A0;  TYPE_SCAN=1</li>
+<li>&#x4EA7;&#x54C1;&#x5217;&#x8868;&#x624B;&#x52A8;&#x9009;&#x62E9;&#x6DFB;&#x52A0; TYPE_MANUAL=2</li>
+<li>&#x626B;&#x63CF;&#x4E8C;&#x7EF4;&#x7801;&#x6DFB;&#x52A0;        TYPE_QR_CODE=3</li>
+</ul>
+<p>&#x5F53;type==2&#x6216;3&#x65F6;&#x9700;&#x8981; setQRInfo<br>
+&#x5F53;type==1&#x65F6;&#x9700;&#x8981;setDeviceSsid <br></p>
 <pre><code class="lang-java">SYSdk.getDeviceActivatorInstance().createActivator(<span class="hljs-keyword">new</span> ActivateParameter.Builder()
         .setContext(<span class="hljs-keyword">this</span>)
         .setSsid(ssid)
@@ -432,7 +466,7 @@
 <tr>
 <td>type</td>
 <td>&#x6570;&#x5B57;</td>
-<td>TYPE_SCAN=1&#x626B;&#x63CF;&#x8BBE;&#x5907;AP&#x6DFB;&#x52A0;,TYPE_MANUAL=2&#x624B;&#x52A8;&#x6DFB;&#x52A0;,TYPE_QR_CODE=3&#x626B;&#x63CF;&#x4E8C;&#x7EF4;&#x7801;&#x6DFB;&#x52A0;</td>
+<td>TYPE_SCAN=1&#x626B;&#x63CF;&#x8BBE;&#x5907;AP&#x6DFB;&#x52A0;<br>TYPE_MANUAL=2&#x624B;&#x52A8;&#x6DFB;&#x52A0;<br>TYPE_QR_CODE=3&#x626B;&#x63CF;&#x4E8C;&#x7EF4;&#x7801;&#x6DFB;&#x52A0;</td>
 </tr>
 <tr>
 <td>QRInfo</td>
@@ -484,7 +518,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"WIFI设备配网","level":"1.4.2","depth":2,"next":{"title":"4.家庭管理","level":"1.5","depth":1,"path":"part4/README.md","ref":"part4/README.md","articles":[]},"previous":{"title":"产品列表","level":"1.4.1","depth":2,"path":"part3/3.1.md","ref":"part3/3.1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part3/3.2.md","mtime":"2019-08-05T02:53:00.392Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-05T06:19:38.723Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"WIFI设备配网","level":"1.4.2","depth":2,"next":{"title":"4.家庭管理","level":"1.5","depth":1,"path":"part4/README.md","ref":"part4/README.md","articles":[]},"previous":{"title":"产品列表","level":"1.4.1","depth":2,"path":"part3/3.1.md","ref":"part3/3.1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part3/3.2.md","mtime":"2019-08-08T06:21:33.287Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-12T08:08:10.575Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -492,6 +526,10 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
