@@ -1,3 +1,4 @@
+
 #设备分享
 
 
@@ -44,3 +45,4 @@ void removeDeviceShare(ShareItemBean shareItemBean, ResultCallBack resultCallBac
 | userName          | 用户名    | 字符串 | \-        |
 | userAccountNumber | 用户账号   | 字符串 | 分为：手机号和邮箱 |
 | iconUrl           | 用户头像地址 | 字符串 | \-        |
+
